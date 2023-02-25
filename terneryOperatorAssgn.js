@@ -30,8 +30,8 @@ var length = word1.length;
 var a = length%2==0 ? "Even" :"Odd";
 return a;
 }
-var b = wordLength("javaScript");
-console.log(`Length of "javascript" word is: ${b}`);
+var b = wordLength("JavaScript");
+console.log(`Length of "JavaScript" word is: ${b}`);
 var b = wordLength("developer");
 console.log(`Length of "developer" word is: ${b}`);
 var b = wordLength("Google");
