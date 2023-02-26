@@ -27,6 +27,10 @@ var result = checkEvenOdd(45);
 console.log(`The given no 45 is: ${result}`);
 var result = checkEvenOdd(70);
 console.log(`The given no 70 is: ${result}`);
+var result = checkEvenOdd(67);
+console.log(`The given no 67 is: ${result}`);
+var result = checkEvenOdd(98);
+console.log(`The given no 98 is: ${result}`);
 
 var num1 = 5;
 if (num>0) {
