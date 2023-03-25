@@ -23,9 +23,9 @@ arrayEmps.filter((element)=>{
        console.log(element); 
     }
  })
- console.log("_______________Employees__From__Wipro__OR__HR________________");
+ console.log("_______________Employees__From_Department_IT__OR__HR________________");
 arrayEmps.filter((element)=>{
-    if (element.emp_dept=="HR"||element.emp_dept=="HR") {
+    if (element.emp_dept=="IT"||element.emp_dept=="HR") {
         console.log(element);
     }
  });
@@ -38,9 +38,24 @@ arrayEmps.filter((element)=>{
 })
 console.log("_______________Employees_Names_Start_With_'A'_OR_'V'_OR_'M'_______________________________");
 
-
-   
+const a=arrayEmps.filter((employe)=>{
+if (employe.emp_name.startsWith("A") || employe.emp_name.startsWith("V") || employe.emp_name.startsWith("M")) {
+    console.log(employe.emp_name);
+  }
+})
+console.log("____________Avrage_ Salary__Employees_For All__Department_____________________________");
   
-
-
-
+let avrage=arrayEmps.filter((element)=>element.emp_salary)
+let av=avrage.reduce((total,value)=>{
+  return total+value.emp_salary
+ },0)
+ console.log(av/arrayEmps.length);
+ 
+ console.log("____________Avrage_ Salary__Employees_From__ IT__Department_____________________________");
+   
+const itDpt=arrayEmps.filter(emp=>emp.emp_dept=="IT")
+ 
+let avr=itDpt.reduce((total,value)=>{
+ return total+value.emp_salary
+},0)
+console.log(avr/itDpt.length);
